@@ -1,4 +1,4 @@
-import router from '../item.router'
+import itemRouter from '../item.router'
 
 describe('item router', () => {
   test('has crud routes', () => {
