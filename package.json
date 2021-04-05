@@ -64,5 +64,6 @@
       "dist/"
     ],
     "restoreMocks": true
-  }
+  },
+  "repository": "https://github.com/hasanosman2020/api-design-node-v3.git"
 }
