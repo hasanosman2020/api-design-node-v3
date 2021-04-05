@@ -12,4 +12,20 @@ app.use(json())
 app.use(urlencoded({ extended: true }))
 app.use(morgan('dev'))
 
-export const start = () => {}
+/****solution-lesson-1******/
+app.get('/', (req, res) => {
+  res.send({ message: 'hello' })
+})
+
+app.post('/', (req, res) => {
+  console.log(req.body)
+  res.send({ message: 'ok' })
+})
+
+export const start = () => {
+  app.listen(3000, () => {
+    console.log('server running on port 3000')
+  })
+}
+
+//now interact with API using Insomnia
